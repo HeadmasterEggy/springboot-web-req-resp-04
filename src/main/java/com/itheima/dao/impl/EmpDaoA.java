@@ -9,7 +9,7 @@ import java.util.List;
 
 //@Component //将当前类交给IOC容器管理, 成为IOC容器中的bean
 @Repository//("daoA")
-public class EmpDaoA implements EmpDao {
+public class  EmpDaoA implements EmpDao {
     @Override
     public List<Emp> listEmp() {
         //1. 加载并解析emp.xml

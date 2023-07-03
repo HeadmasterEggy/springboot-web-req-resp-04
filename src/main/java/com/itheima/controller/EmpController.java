@@ -13,12 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
-@RestController
+@RestController //@RestController = @Controller + @ResponseBody
 public class EmpController {
 
-//    @Qualifier("empServiceA")
-//    @Autowired //运行时, IOC容器会提供该类型的bean对象,并赋值给该变量 - 依赖注入
-//    private EmpService empService ;
+/*
+    @Qualifier("empServiceA")
+    @Autowired //运行时, IOC容器会提供该类型的bean对象,并赋值给该变量 - 依赖注入
+    private EmpService empService ;
+*/
 
     @Resource(name = "empServiceB")
     private EmpService empService ;
